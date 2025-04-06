@@ -1,6 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"><defs>
 
-<symbol id="icon-arrow" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.667 16H5.334M13.333 24l-8-8 8-8"/></symbol>
+<symbol id="icon-arrow-left" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M26.667 16H5.334M13.333 24l-8-8 8-8"/></symbol>
+
+<symbol id="icon-arrow-right" viewBox="0 0 33 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M6 16h21.333M19.333 8l8 8-8 8"/></symbol>
 
 <symbol id="icon-art" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M17.037 20 12 14.963M2.667 29.333c2.667 0 6.144.456 7.966-1.367a4.668 4.668 0 0 0-6.6-6.6c-1.823 1.822 0 5.3-1.367 7.967z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M10.667 21.333c-.655-.655-.983-.983-1.168-1.326a2.668 2.668 0 0 1 .05-2.623c.198-.336.538-.651 1.218-1.28L23.924 3.921a2.94 2.94 0 0 1 4.153 4.153L15.894 21.231c-.63.68-.944 1.02-1.28 1.218-.805.475-1.8.495-2.623.05-.343-.185-.671-.513-1.326-1.168z"/></symbol>
 
