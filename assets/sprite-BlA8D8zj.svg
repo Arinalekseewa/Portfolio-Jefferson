@@ -26,4 +26,6 @@
 
 <symbol id="icon-line" viewBox="0 0 5488 32"><path stroke-width="16" d="M0 16h5488"/></symbol>
 
+<symbol id="icon-about-me-arrow-right" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M5.334 16h21.333M18.666 8l8 8-8 8"/></symbol>
+
 </defs></svg>
