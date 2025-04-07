@@ -14,117 +14,6 @@
   overflow: hidden;
 } 
 
-.about-me-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
-}
-
-.about-me-card {
-  background: #242527;
-  border-radius: 24px;
-  width: 343px;
-  height: 500px;
-  box-sizing: border-box;
-}
-
-.about-me-description {
-  width: 279px;
-  height: 196px;
-  font-size: 24px;
-  line-height: 1.17;
-  text-align: left;
-  color: #fafafa;
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  padding-top: 32px;
-  padding-left: 32px;
-}
-
-/* 🔴 Акцент - червоний */
-.about-me-accent-red {
-  color: #ed3b44;
-}
-
-/* ⚪ Акцент - сірий/прозорий */
-.about-me-accent-grey {
-  color: rgba(250, 250, 250, 0.4);
-}
-
-.photo-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
-
-.about-me-avatar {
-  border-radius: 24px;
-  width: 343px;
-  height: 500px;
-  object-fit: cover;
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-top: 96px;
-  }
-
-  .about-me-card {
-    width: 704px;
-    height: 700px;
-  }
-
-  .about-me-description {
-    width: 576px;
-    height: 200px;
-    font-size: 38px;
-    line-height: 1.05263;
-    padding: 64px 64px 0 64px;
-  }
-
-  .about-me-avatar {
-    width: 704px;
-    height: 700px;
-  }
-}
-
-/* Desktop */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-top: 164px;
-  }
-
-  .about-me-content {
-    flex-direction: row;
-    gap: 16px;
-    justify-content: center;
-  }
-
-  .about-me-card {
-    width: 680px;
-    height: 700px;
-  }
-
-  .about-me-description {
-    width: 552px;
-    height: 200px;
-    font-size: 38px;
-    line-height: 1.05263;
-    padding: 64px 64px 0 64px;
-  }
-
-  .about-me-avatar {
-    width: 680px;
-    height: 700px;
-  }
-}
-
 /* ====================================== */
 
 .about-me-item {
@@ -243,17 +132,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .about-me-text {
-    padding: 64px 64px 436px 64px;
-    font-size: 38px;
-    line-height: 1.05;
-    color: #fafafa;
-  }
-
-  .about-me-img img {
-    margin-bottom: 64px;
-  }
-
+ 
   .about-me-item {
     padding-bottom: 24px;
     margin-bottom: 32px;
@@ -299,21 +178,7 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .about-me-flex {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 96px;
-  }
-
-  .about-me-img img {
-    max-width: none;
-    margin-bottom: 0;
-  }
-
-  .about-me-text {
-    margin-bottom: 0;
-  }
-
+  
   .about-me-flex-div {
     margin-left: auto;
     max-width: 612px;
