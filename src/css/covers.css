@@ -91,6 +91,10 @@
   margin-bottom: -160px;
 }
 
+.covers-list {
+  margin-left: -100px;
+}
+
 /* Tablet screen */
 @media screen and (min-width: 768px) {
   .covers-section {
@@ -119,6 +123,7 @@
   .covers-section {
     padding-top: 100px;
   }
+
   .first-row {
     margin-top: -450px;
   }
@@ -137,7 +142,4 @@
     box-shadow: 0 0 5px rgba(106, 107, 107, 0.836);
   }
 
-  .covers-list {
-    margin-left: -100px;
-  }
 }
