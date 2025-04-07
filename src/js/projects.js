@@ -1,7 +1,6 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
@@ -32,7 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
     prevBtn.disabled = swiperInstance.isBeginning;
     nextBtn.disabled = swiperInstance.isEnd;
 
+    // Додаємо або видаляємо класи для зміни кольору
     prevBtn.classList.toggle('disabled', swiperInstance.isBeginning);
     nextBtn.classList.toggle('disabled', swiperInstance.isEnd);
+
+    // Можна додатково змінювати кольори кнопок через CSS
+   // prevBtn.style.backgroundColor = swiperInstance.isBeginning ? '#ccc' : '#007bff';
+    //nextBtn.style.backgroundColor = swiperInstance.isEnd ? '#ccc' : '#007bff';
   }
 });

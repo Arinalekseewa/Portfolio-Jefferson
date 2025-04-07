@@ -4,7 +4,7 @@
 
     <div class="swiper-container">
       <ul class="swiper-wrapper">
-        <!--ПЕРШИЙ СЛАЙД-->
+        <!-- ПЕРШИЙ СЛАЙД -->
         <li class="swiper-slide first">
           <div class="first-part">
             <ul class="scils">
@@ -20,62 +20,140 @@
               <p class="a-text">See project</p>
             </a>
           </div>
-            <div class="img-sumb">
-              <img class="img-swipe" src="../img/img-1-projects-mob.webp" alt="#" width="311" height="195" />
-            </div>
-        </li>
-        <!--ДРУГИЙ СЛАЙД-->
-        <li class="swiper-slide second">
-          <ul class="scils">
-            <li class="scils-list">#react</li>
-            <li class="scils-list">#js</li>
-            <li class="scils-list">#node js</li>
-            <li class="scils-list">#git</li>
-          </ul>
-          <p class="sumb-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
-          <a class="a-project" href="#" target="_blank"
-            ><p class="a-text">See project</p></a
-          >
           <div class="img-sumb">
-            <img
-              class="img-swipe"
-              src="../img/img-2-projects-mob.webp"
-              alt="#"
-              width="311"
-              height="195"
-            />
+            <picture>
+              <!-- Для мобільних екранів 1x та 2x -->
+              <source srcset="" media="(max-width: 768px)" />
+              <!-- Для планшетів 1x та 2x -->
+              <source
+                srcset="../tab-first-small.png 1x, ../tab-first-big.png 2x"
+                media="(min-width: 769px) and (max-width: 1440)"
+              />
+              <!-- Для десктопів 1x та 2x -->
+              <source
+                srcset="../desct-first-big.png 1x, ../desct-first-small.png 2x"
+                media="(min-width: 1440px)"
+              />
+              <!-- Основне зображення (fallback) -->
+              <img
+                src="../img/mobail-first-1x.png"
+                alt="Project preview 1"
+                width="311"
+                height="195"
+              />
+            </picture>
           </div>
         </li>
-        <!--ТРЕТІЙ СЛАЙД-->
-        <li class="swiper-slide last">
-          <ul class="scils">
-            <li class="scils-list">#react</li>
-            <li class="scils-list">#js</li>
-            <li class="scils-list">#node js</li>
-            <li class="scils-list">#git</li>
-          </ul>
-          <p class="sumb-text">
-            Programming Across Borders: Ideas, Technologies, Innovations
-          </p>
-          <a class="a-project" href="#" target="_blank"
-            ><p class="a-text">See project</p></a
-          >
+
+        <!-- ДРУГИЙ СЛАЙД -->
+        <li class="swiper-slide second">
+          <div class="first-part">
+            <ul class="scils">
+              <li class="scils-list">#react</li>
+              <li class="scils-list">#js</li>
+              <li class="scils-list">#node js</li>
+              <li class="scils-list">#git</li>
+            </ul>
+            <p class="sumb-text">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a class="a-project" href="#" target="_blank">
+              <p class="a-text">See project</p>
+            </a>
+          </div>
           <div class="img-sumb">
-            <img
-              class="img-swipe"
-              src="../img/img-3-projects-mob.webp"
-              alt="#"
-              width="311"
-              height="195"
-            />
+            <picture>
+              <!-- Для мобільних екранів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-2-projects-mob.webp    1x,
+                  ../img/img-2-projects-mob@2x.webp 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <!-- Для планшетів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-2-projects-tablet.webp    1x,
+                  ../img/img-2-projects-tablet@2x.webp 2x
+                "
+                media="(min-width: 769px) and (max-width: 1440px)"
+              />
+              <!-- Для десктопів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-2-projects-desktop.webp    1x,
+                  ../img/img-2-projects-desktop@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <!-- Основне зображення (fallback) -->
+              <img
+                src="../img/img-2-projects-mob.webp"
+                alt="Project preview 2"
+                width="311"
+                height="195"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <!-- ТРЕТІЙ СЛАЙД -->
+        <li class="swiper-slide last">
+          <div class="first-part">
+            <ul class="scils">
+              <li class="scils-list">#react</li>
+              <li class="scils-list">#js</li>
+              <li class="scils-list">#node js</li>
+              <li class="scils-list">#git</li>
+            </ul>
+            <p class="sumb-text">
+              Programming Across Borders: Ideas, Technologies, Innovations
+            </p>
+            <a class="a-project" href="#" target="_blank">
+              <p class="a-text">See project</p>
+            </a>
+          </div>
+          <div class="img-sumb">
+            <picture>
+              <!-- Для мобільних екранів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-3-projects-mob.webp    1x,
+                  ../img/img-3-projects-mob@2x.webp 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <!-- Для планшетів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-3-projects-tablet.webp    1x,
+                  ../img/img-3-projects-tablet@2x.webp 2x
+                "
+                media="(min-width: 769px) and (max-width: 1440px)"
+              />
+              <!-- Для десктопів 1x та 2x -->
+              <source
+                srcset="
+                  ../img/img-3-projects-desktop.webp    1x,
+                  ../img/img-3-projects-desktop@2x.webp 2x
+                "
+                media="(min-width: 1440px)"
+              />
+              <!-- Основне зображення (fallback) -->
+              <img
+                src="../img/img-3-projects-mob.webp"
+                alt="Project preview 3"
+                width="311"
+                height="195"
+              />
+            </picture>
           </div>
         </li>
       </ul>
     </div>
-    <!--КШРЕЦЬ ТРЕТЬОГО СЛАЙДА-->
 
+    <!-- КНОПКИ НАВІГАЦІЇ -->
     <div class="slider-controls">
       <button class="prev" aria-label="Previous slide">
         <svg class="icon-left" width="24" height="24">
@@ -90,7 +168,3 @@
     </div>
   </div>
 </section>
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="scripts.js"></script> -->
-

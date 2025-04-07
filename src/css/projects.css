@@ -1,45 +1,33 @@
 .projects-section {
   max-width: 100%;
 }
-
-
 .tittle{
 font-weight: 600;
 font-size: 16px;
 margin-bottom: 32px;
-
-/* line-height: 24px; */ 
+/* line-height: 24px; */
 line-height: 1.5;
 letter-spacing: -0.02em;
 text-transform: uppercase;
 color: rgba(250, 250, 250, 0.4);
-
 }
-
 /* ===== СВАЙПЕР ===== */
 .swiper-container {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
-
 /* === swiper-wrapper має бути горизонтальним === */
 .swiper-wrapper {
   display: flex;
   flex-direction: row; /* <-- це головне для горизонтального скролу */
   list-style-type: none;
 }
-
 /* === СЛАЙДИ === */
-
-.swiper-slide.first{
+.swiper-slides.first{
 border-radius: 24px;
-
 }
-
-
 /*===КОНТЕЙНЕР ЗІ СКІЛАМИ===*/
-
 .scils{
   display: flex;
 flex-wrap: wrap;
@@ -56,7 +44,6 @@ font-weight: 500;
   margin-bottom: 96px;
 }
 /*=====СКІЛ РЕАКТ====*/
-
 .scils-list{
 display: flex;
 align-items: center;
@@ -66,7 +53,6 @@ border-radius: 60px;
 padding: 13px 18px;
 height: 45px;
 }
-
 /*====СКІЛ JS=====*/
 .scils-list-js{
   display: flex;
@@ -80,7 +66,6 @@ padding: 13px 18px;
 width: 57px;
 height: 45px;
 }
-
 .first-part {
   padding: 32px;
   display: flex;
@@ -88,7 +73,6 @@ flex-direction: column;
 align-items: flex-start;
 }
 /*=====СКІЛ NODE=====*/
-
 .scils-list-node{
 display: flex;
 align-items: center;
@@ -101,9 +85,7 @@ padding: 13px 18px;
 width: 94px;
 height: 45px;
 }
-
 /*=====СКІЛ GIT=====*/
-
 .scils-list-git{
 display: flex;
 align-items: center;
@@ -116,29 +98,23 @@ padding: 13px 18px;
 width: 63px;
 height: 45px;
 }
-
 /*=====ТЕКСТ ПЕРЕД КНОПКОЮ===*/
-
 .sumb-text{
   font-family: "Inter Tight", sans-serif;
 font-weight: 500;
 font-size: 24px;
 margin-bottom: 32px;
-
-/* line-height: 28px; */ 
+/* line-height: 28px; */
 line-height: 1.16667;
 letter-spacing: -0.03em;
-color: #1c1d20;
+color: #1C1D20;
 text-align: left;
 width: 279px;
 word-break: break-word;
 display: flex;
 align-items: center;
 }
-
 /*======КНОПКА-ПОСИЛАННЯ======*/
-
-
 .a-project{
   display: flex;
 align-items: center;
@@ -146,19 +122,14 @@ justify-content: center;
 border-radius: 60px;
 padding: 13px 32px;
 height: 45px;
-background-color: #ed3b44;
-
+background-color: #ED3B44;
 transform: background-color 0.3ms ease;
 }
-
 .a-project:hover,
 .a-project:focus {
   background-color: #E0373F;
 }
-
 /*======КОНТЕЙНЕР ДЛЯ ЗОБРАЖЕННЯ=====*/
-
-
 .img-sumb{
 background: #242527;
 display: flex;
@@ -166,18 +137,13 @@ justify-content: center;
 align-content: center;
 padding: 100px 16px;
 }
-
 /*=====ТЕКСТ КНОПКИ======*/
-
 .a-text{
 font-size: 16px;
 letter-spacing: -0.02em;
-color: #fafafa;
-
+color: #FAFAFA;
 }
-
 /*=====КОНТЕЙНЕР КНОПОК ГОРТАННЯ=====*/
-
 .slider-controls{
   display: flex;
 align-items: flex-start;
@@ -190,45 +156,22 @@ margin-top: 32px;
 margin-left: auto;
 margin-right: auto;
 }
-
-
-/*======КНОПКА ВПРАВО======*/
-
-.prev {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
-    cursor: pointer;
-    background-color: #1c1d20;;
-}
-.next{
- display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: row;
-gap: 10px;
+/*======КНОПКИ ГОРТАННЯ======*/
+.next, .prev{
 border: 1px solid rgba(250, 250, 250, 0.5);
 border-radius: 60px;
 padding: 14px;
 width: 52px;
 height: 52px;
-cursor: pointer;
-background-color: #1c1d20;;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
 
+background-color:transparent;
 }
-
-.icon-left {
-  stroke: #3B3B3B;
-}
-
-.icon-right {
+.icon-right, .icon-right {
   stroke: #FAFAFA;
 }
 .swiper-slide {
@@ -239,16 +182,12 @@ background-color: #1c1d20;;
   text-align: center;
   background-color: #fff;
 }
-
 /* === КНОПКИ === */
-
 /*.slider-controls button {
   cursor: pointer;
   transition: 0.3s;
 }
 */
-
-
 /*.slider-controls button.disabled,
 .slider-controls button:disabled {
   background-color:black;
@@ -256,11 +195,49 @@ background-color: #1c1d20;;
   opacity: 0.6;
 }
 */
-/* Стиль для кнопки, коли слайд недоступний (disabled) */
-.slider-controls button.disabled {
-  stroke: red;
-  cursor: not-allowed;
-  opacity: 0.6;
+/* Стиль для активної кнопки */
+/* Загальний стиль для кнопок */
+/* Загальний стиль для кнопок */
+/* Загальні стилі для кнопок */
+/* Загальні стилі для кнопок */
+button {
+  border: 1px solid rgba(250, 250, 250, 0.5); /* Початковий сірий бордер */
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:transparent; /* Прозорий фон */
+  cursor: pointer;
+  transition: border-color 0.3s, fill 0.3s, stroke 0.3s, background-color 0.3s; /* Плавні переходи */
+}
+
+/* Стиль для неактивної кнопки */
+button.disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent; 
+  cursor: not-allowed; 
+}
+
+/* Стиль для активної кнопки */
+button:not(.disable){
+ border: 1px solid rgba(250, 250, 250, 0.5);
+  background-color:transparent;
+}
+
+/* Колір для SVG іконок на активній кнопці */
+button:not(.disabled) svg {
+  fill: #fff; 
+  stroke-width: 2px;
+  stroke: #fafafa; 
+}
+
+/* Колір для SVG іконок на неактивній кнопці */
+button.disabled svg {
+  stroke-width: 2px;
+ stroke: #3b3b3b;
 }
 
 @media (min-width: 768px) {
@@ -280,11 +257,28 @@ background-color: #1c1d20;;
   .img-sumb {
     padding: 120px 45px;
   }
-}
+  .slider-controls{
+   width: 156px;
+   height: 68px;
 
+  }
+.next, .prev{
+  width: 68px;
+height: 68px;
+padding: 18px;
+}
+.img-sumb{
+  padding-left: 45px;
+  padding-right: 45px;
+}
+}
 @media (min-width: 1440px) {
-  .swiper-slide {
+  .swiper-slide .last {
     display: flex;
     flex-direction: row;
   }
+  .img-sumb{
+  padding-left: 37px;
+  padding-right: 37px;
+}
 }
