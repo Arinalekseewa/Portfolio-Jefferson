@@ -1,13 +1,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const prevBtn = document.querySelector('.prev');
   const nextBtn = document.querySelector('.next');
 
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1, /* Тепер буде видно лише один слайд за раз */
+    slidesPerView: 1,
     spaceBetween: 20,
     grabCursor: true,
     keyboard: {
@@ -29,10 +28,19 @@ document.addEventListener('DOMContentLoaded', function () {
   nextBtn.addEventListener('click', () => swiper.slideNext());
 
   function updateButtons(swiperInstance) {
-    prevBtn.disabled = swiperInstance.isBeginning;
-    nextBtn.disabled = swiperInstance.isEnd;
+    const atBeginning = swiperInstance.isBeginning;
+    const atEnd = swiperInstance.isEnd;
 
-    prevBtn.classList.toggle('disabled', swiperInstance.isBeginning);
-    nextBtn.classList.toggle('disabled', swiperInstance.isEnd);
+    // Дизейбл кнопок
+    prevBtn.disabled = atBeginning;
+    nextBtn.disabled = atEnd;
+
+    // Тогл класу "disabled"
+    prevBtn.classList.toggle('disabled', atBeginning);
+    nextBtn.classList.toggle('disabled', atEnd);
+
+    // Тогл класу "active"
+    prevBtn.classList.toggle('active', !atBeginning);
+    nextBtn.classList.toggle('active', !atEnd);
   }
 });

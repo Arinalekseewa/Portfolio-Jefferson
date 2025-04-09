@@ -11,6 +11,19 @@ new Accordion('.faq-list', {
   },
 });
 
+document.querySelectorAll('.questions').forEach((questionBlock, index) => {
+  const button = questionBlock.querySelector('.btn-answer');
+  const title = questionBlock.querySelector('.title-item-list');
+  const panel = document.querySelectorAll('.ac-panel')[index]; // відповідний .ac-panel
+
+  button.addEventListener('click', () => {
+    title.classList.toggle('active');
+    panel.classList.toggle('open');
+    button.classList.toggle('active');
+  });
+});
+
+
 
 
 

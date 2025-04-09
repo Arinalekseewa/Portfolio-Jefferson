@@ -6,11 +6,21 @@ const modal = document.querySelector(".mobile-menu");
 const navLinks = document.querySelectorAll(".mobile-navigation-link");
 const orderBtn = document.querySelector(".order-nav-mobile");
 
-openNavBtn.addEventListener('click', toggleNav);
-
-function toggleNav() {
+function toggleNav(event) {
+    event.stopPropagation();
     nav.classList.toggle('is-open');
 }
+
+document.addEventListener('click', function(event) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickOnButton = openNavBtn.contains(event.target);
+
+    if (!isClickInsideNav && !isClickOnButton) {
+        nav.classList.remove('is-open');
+    }
+});
+
+openNavBtn.addEventListener('click', toggleNav);
 
 function openModal() {
     modal.classList.add("is-open");

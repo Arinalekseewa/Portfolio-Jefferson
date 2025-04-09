@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   AOS.init({
-    duration: 1200,
+    duration: 300,
     easing: 'ease-out-cubic',
     offset: 100,
     once: false,

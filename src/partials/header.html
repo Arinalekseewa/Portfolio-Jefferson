@@ -1,7 +1,11 @@
 <header class="header" id="header">
-    <div class="container header-container">
+    <div class="header-container container">
         <a class="header-logo" href="index.html">
-            <img src="img/img-icon.webp" alt="jefferson" width="80">
+            <picture>
+                <source srcset="img/img-icon@1x.webp 1x,
+                                img/img-icon@2x.webp 2x"/>
+                <img src="img/img-icon@1x.webp" alt="me" />
+            </picture>
             <svg class="icon-jefferson" width="84" height="19">
                 <use href="img/sprite.svg#icon-jefferson"></use>
             </svg>

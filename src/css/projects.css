@@ -30,14 +30,6 @@ color: rgba(250, 250, 250, 0.4);
   list-style-type: none;
 }
 
-/* === СЛАЙДИ === */
-
-.swiper-slide.first{
-border-radius: 24px;
-
-}
-
-
 /*===КОНТЕЙНЕР ЗІ СКІЛАМИ===*/
 
 .scils{
@@ -47,7 +39,7 @@ align-items: flex-start;
 justify-content: flex-start;
 flex-direction: row;
 gap: 6px;
-width: 279px;
+width: 100%;
 height: 96px;
 font-weight: 500;
   font-size: 16px;
@@ -83,9 +75,10 @@ height: 45px;
 
 .first-part {
   padding: 32px;
+  min-width: 288px;
   display: flex;
-flex-direction: column;
-align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
 /*=====СКІЛ NODE=====*/
 
@@ -120,6 +113,7 @@ height: 45px;
 /*=====ТЕКСТ ПЕРЕД КНОПКОЮ===*/
 
 .sumb-text{
+  min-width: 224px;
   font-family: "Inter Tight", sans-serif;
 font-weight: 500;
 font-size: 24px;
@@ -130,7 +124,7 @@ line-height: 1.16667;
 letter-spacing: -0.03em;
 color: #1c1d20;
 text-align: left;
-width: 279px;
+width: 100%;
 word-break: break-word;
 display: flex;
 align-items: center;
@@ -147,8 +141,11 @@ border-radius: 60px;
 padding: 13px 32px;
 height: 45px;
 background-color: #ed3b44;
+font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 
-transform: background-color 0.3ms ease;
+transform: all 0.3ms ease;
 }
 
 .a-project:hover,
@@ -165,30 +162,19 @@ display: flex;
 justify-content: center;
 align-content: center;
 padding: 100px 16px;
-}
-
-/*=====ТЕКСТ КНОПКИ======*/
-
-.a-text{
-font-size: 16px;
-letter-spacing: -0.02em;
-color: #fafafa;
-
+border-bottom-left-radius: 24px;
+border-bottom-right-radius: 24px;
 }
 
 /*=====КОНТЕЙНЕР КНОПОК ГОРТАННЯ=====*/
 
 .slider-controls{
   display: flex;
-align-items: flex-start;
-justify-content: flex-start;
 flex-direction: row;
 gap: 12px;
-width: 116px;
-height: 52px;
 margin-top: 32px;
-margin-left: auto;
-margin-right: auto;
+fill: none;
+justify-content: center;
 }
 
 
@@ -208,7 +194,8 @@ margin-right: auto;
     cursor: pointer;
     background-color: #1c1d20;;
 }
-.next{
+
+.next {
  display: flex;
 align-items: center;
 justify-content: center;
@@ -220,12 +207,12 @@ padding: 14px;
 width: 52px;
 height: 52px;
 cursor: pointer;
-background-color: #1c1d20;;
-
+background-color: transparent;
 }
 
 .icon-left {
   stroke: #3B3B3B;
+  fill: none;
 }
 
 .icon-right {
@@ -235,35 +222,81 @@ background-color: #1c1d20;;
   min-width: 343px;
   height: 812px;
   flex-shrink: 0;
-  border-radius: 12px;
+  border-radius: 28px;
   text-align: center;
   background-color: #fff;
 }
 
 /* === КНОПКИ === */
 
-/*.slider-controls button {
+.slider-controls button {
   cursor: pointer;
   transition: 0.3s;
 }
-*/
 
+.slider-controls button.active {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+}
 
-/*.slider-controls button.disabled,
+.slider-controls button.active svg {
+  stroke: #FAFAFA;
+}
+
+.slider-controls button.disabled,
 .slider-controls button:disabled {
-  background-color:black;
+  background-color:transparent;
   cursor: not-allowed;
   opacity: 0.6;
 }
-*/
+
 /* Стиль для кнопки, коли слайд недоступний (disabled) */
 .slider-controls button.disabled {
-  stroke: red;
-  cursor: not-allowed;
-  opacity: 0.6;
+  cursor: default;
+}
+
+.slider-controls button:not(.disabled):not(:disabled):hover {
+  border: 1px solid rgba(237, 59, 68, 0.5);
+    box-shadow: 0 0 10px rgba(237, 59, 68, 0.5), 0 0 20px rgba(237, 59, 68, 0.3);
+}
+
+.slider-controls button:not(.disabled):not(:disabled):hover svg {
+  stroke: rgba(237, 59, 68, 0.6);
+}
+
+@media (max-width: 320px) {
+  .swiper-slide {
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box;
+    border-radius: 28px;
+  }
+
+  .first-part {
+    padding: 15px;
+  }
+
+  .scils {
+    width: 100%;
+  }
+
+  .sumb-text {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
+  .prev{
+    height: 68px;
+    width: 68px;
+  }
+  .next {
+    height: 68px;
+    width: 68px;
+  }
+  .slider-controls {
+    margin-top: 64px;
+    gap: 20px;
+  }
   .first-part {
     padding: 64px;
   }
@@ -283,8 +316,24 @@ background-color: #1c1d20;;
 }
 
 @media (min-width: 1440px) {
-  .swiper-slide {
+  .scils {
+    width: auto;
+    height:auto;
+    margin-bottom: 223px;
+  }
+  .swiper-slide.first,
+  .swiper-slide.second,
+  .swiper-slide.last {
     display: flex;
     flex-direction: row;
+  }
+
+  .img-sumb {
+    padding: 120px 37px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+  }
+  .first-part {
+    padding: 64px 130px 64px 64px;
   }
 }

@@ -1,17 +1,16 @@
 /* header */
+header {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 32px;
+}
 
-header .container {
+.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: transparent;
-    padding-top: 32px;
-    position: absolute;
-    left: 0;
-    min-width: 100%;
 }
-
-
 
 .header-logo {
     display: flex;
@@ -48,8 +47,7 @@ header .container {
 }
 
 @media screen and (min-width: 768px) {
-    header .container {
-        padding: 0 32px;
+    header {
         padding-top: 32px;
     }
 
@@ -73,7 +71,7 @@ header .container {
         padding: 18px 24px;
         font-weight: 500;
 
-        transform: background-color 300 ms ease;
+        transform: all 300 ms ease;
     }
 
     .order-nav:hover,
@@ -193,10 +191,10 @@ header .container {
     padding-top: 302px;
     padding-bottom: 64px;
 
-    background-image: url(../img/img-hero-mob.webp);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(../img/img-mobile-menu.webp);
     background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
 
 
     transform: translateX(100%);
@@ -206,6 +204,14 @@ header .container {
 /* При відкритті меню */
 .mobile-menu.is-open .mobile-menu-container {
     transform: translateY(0);
+}
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .mobile-menu-container {
+        background-image: url(../img/img-mobile-menu@2x.webp);
+    }
 }
 
 .mobile-close-btn {
@@ -232,7 +238,7 @@ header .container {
     color: #FAFAFA;
     position: relative;
 
-    transform: color 300ms ease;
+    transform: all 300ms ease;
 }
 
 .mobile-navigation-link:hover,
@@ -250,7 +256,7 @@ header .container {
     border-radius: 50%;
     background-color: #FAFAFA;
 
-    transform: background-color 300ms ease;
+    transform: all 300ms ease;
 }
 
 .mobile-navigation-link:hover::after,
@@ -271,7 +277,7 @@ header .container {
     font-weight: 500;
     font-size: 14px;
 
-    transform: background-color 300 ms ease;
+    transform: all 300 ms ease;
 }
 
 .order-nav-mobile:hover,

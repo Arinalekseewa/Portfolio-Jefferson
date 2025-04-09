@@ -17,11 +17,7 @@
 }
 
 body {
-  display: flex;
   background-color: #1c1d20;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
   margin: 0;
 }
 

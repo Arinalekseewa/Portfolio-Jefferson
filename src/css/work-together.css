@@ -2,13 +2,9 @@
   position: relative;
   z-index: 1;
   background-color: transparent;
-  margin-bottom: 32px;
+  padding-top: 64px;
+  padding-bottom: 32px;
 }
-
-.connect__container {
-  margin-bottom: 32px;
-}
-
 .connect__picture {
   z-index: -1;
   position: absolute;
@@ -21,8 +17,6 @@
   .connect__container {
     display: flex;
     flex-direction: column;
-  }
-  .cont {
     padding: 0px 196px 0px 196px;
   }
 }
@@ -36,19 +30,18 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 64px;
-  padding-top: 32px;
 }
 
 @media (min-width: 768px) {
   .connect__title {
     max-width: 525px;
     font-size: 64px;
-    padding-top: 88px;
     margin-bottom: 18px;
   }
-  .connect__container {
-    margin-bottom: 169px;
-  }
+    .connect {
+      padding-top: 80px;
+      padding-bottom: 169px;
+    }
 }
 
 .connect__icon {
