@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&display=swap" rel="stylesheet">
-      <link rel="preload" as="image" href="img/Hero_img/mobile-hero@2x.webp" type="image/webp">
+      <link rel="preload" as="image" href="/Portfolio-Jefferson/assets/mobile-hero@2x-1FGMwCu-.webp" type="image/webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <script type="module" crossorigin src="/Portfolio-Jefferson/index.js"></script>
     <link rel="modulepreload" crossorigin href="/Portfolio-Jefferson/assets/vendor-BbBZ3pcz.js">
     <link rel="stylesheet" crossorigin href="/Portfolio-Jefferson/assets/vendor-Swr64C_e.css">
-    <link rel="stylesheet" crossorigin href="/Portfolio-Jefferson/assets/index-DrVEt2C0.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio-Jefferson/assets/index-BBzhRjVJ.css">
   </head>
   <body>
     <header class="header" id="header">
@@ -95,6 +95,17 @@
         </svg>
       </button>
       <section class="hero-container">
+    <picture>
+        <source class="hero-img" srcset="im/mobile-hero@1x.webp 1x, /Portfolio-Jefferson/assets/mobile-hero@2x-1FGMwCu-.webp 2x" media="(max-width: 767px)" />
+        <source srcset="/Portfolio-Jefferson/assets/tablet-hero@1x-SXa6Odts.webp 1x, /Portfolio-Jefferson/assets/tablet-hero@2x-BGhmwmlc.webp 2x"
+            media="(min-width: 768px) and (max-width: 1439px)" />
+        <source srcset="/Portfolio-Jefferson/assets/desktop-hero@1x-D4eXcfN7.webp 1x, /Portfolio-Jefferson/assets/desktop-hero@2x-DbncZzaP.webp 2x" media="(min-width: 1440px)" />
+        <img class="hero-img"
+            src="/Portfolio-Jefferson/assets/mobile-hero@1x-BxGBk1j9.webp" 
+            alt="me" 
+            fetchpriority="high"
+            loading="lazy" />
+    </picture>
        <div class="hero-content container">
         <h1 class="hero-title"> Hello.<br>I'm fullstack developer<br>Lloyd Jefferson.</h1>
         <div class="hero-footer ">
